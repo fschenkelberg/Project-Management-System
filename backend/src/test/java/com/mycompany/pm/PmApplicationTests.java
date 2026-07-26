@@ -1,13 +1,13 @@
-package com.mycompany.project_management;
+package com.mycompany.pm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProjectManagementApplicationTests {
+class PmApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }

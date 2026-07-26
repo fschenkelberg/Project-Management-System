@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+## dependency audit ##
+.dependency-check-data/
