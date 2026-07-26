@@ -78,7 +78,7 @@ BUILD SUCCESSFUL in Xs
 The application will start and display output similar to:
 
 ```
-2024-01-XX XX:XX:XX.XXX  INFO XXXX --- [  restartedMain] c.m.p.ProjectManagementApplication     : Started ProjectManagementApplication in X.XXX seconds (JVM running for X.XXX)
+2024-01-XX XX:XX:XX.XXX  INFO XXXX --- [  restartedMain] c.m.p.pmApplication     : Started pmApplication in X.XXX seconds (JVM running for X.XXX)
 ```
 
 ### Option 2: Using the Executable JAR
@@ -97,7 +97,7 @@ java -jar build/libs/project-management-0.0.1-SNAPSHOT.jar
 
 1. Open the project root directory
 2. Install the "Extension Pack for Java" extension
-3. Open `src/main/java/com/mycompany/projectmanagement/ProjectManagementApplication.java`
+3. Open `src/main/java/com/mycompany/pm/pmApplication.java`
 4. Click the **Run** button above the main method
 
 ## Verifying the Application
@@ -137,13 +137,13 @@ Project-Management-System/
 ├── gradle/                          # Gradle wrapper files
 ├── src/
 │   ├── main/
-│   │   ├── java/com/mycompany/projectmanagement/
-│   │   │   └── ProjectManagementApplication.java
+│   │   ├── java/com/mycompany/pm/
+│   │   │   └── pmApplication.java
 │   │   └── resources/
 │   │       ├── application.properties
 │   │       └── application.yml
 │   └── test/
-│       └── java/com/mycompany/projectmanagement/
+│       └── java/com/mycompany/pm/
 ├── build.gradle                     # Gradle build configuration
 ├── gradlew                          # Gradle Wrapper (macOS/Linux)
 ├── gradlew.bat                      # Gradle Wrapper (Windows)
