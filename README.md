@@ -10,6 +10,7 @@ A comprehensive project management application built with Spring Boot, featuring
 - [Verifying the Application](#verifying-the-application)
 - [Project Structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
+- [Logging](#logging)
 - [Development Workflow](#development-workflow)
 - [Next Steps](#next-steps)
 - [Support & Documentation](#support--documentation)
@@ -197,6 +198,28 @@ server.port=8081
 rm -rf ~/.gradle/caches
 ./gradlew clean build
 ```
+
+## Logging
+
+The application uses Spring Boot's Logback integration for logging.
+
+### Configuration file: src/main/resources/logback-spring.xml
+
+Logging behavior is determined by the active Spring profile. The active profile can be configured in application.properties or overridden at runtime.
+
+For example, to use the local profile, set the following property in application.properties:
+
+```
+spring.profiles.active=local
+```
+
+Alternatively, you can specify the active profile when starting the application:
+
+```
+./gradlew bootRun --args='--spring.profiles.active=local'
+```
+
+The local profile enables console logging and configures the application package logger at the DEBUG level.
 
 ## Development Workflow
 
